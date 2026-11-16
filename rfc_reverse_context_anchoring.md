@@ -1,6 +1,7 @@
-# Reverse Context Anchoring: A Hybrid Pipeline for Low-Cost Short-Form Content Integrity and Intent-Aware Recommendation
+# Reverse Context Anchoring: A Hybrid Pipeline for Low-Cost Video Content Integrity and Intent-Aware Recommendation
 
-Authors: Anonymous (Independent Research)  
+Authors: Kiyoung (Independent Research)  
+Contact: tjdrldud850@gmail.com  
 Status: RFC / Proposal  
 Date: 2026-07-03
 
@@ -8,13 +9,13 @@ Date: 2026-07-03
 
 ## TL;DR
 
-Short-form platforms are drowning in re-upload bots — identical clips with swapped narration, uploaded 10–100 times a day. Fixing this with AI video scanning costs a fortune and still misses the point. This proposal adds one step to the upload form: creators declare what their video is about and confirm they have rights to any third-party content they used. Legitimate creators sign in ten seconds. Bad actors face a forced choice — lie and create legal liability, or tell the truth and get filtered. No new AI systems required. No algorithm overhaul. A form field and a legal declaration. Any creator who objects to signing it is, by definition, the problem.
+Video platforms are drowning in re-upload bots — identical clips with swapped narration, uploaded 10–100 times a day. This applies equally to short-form and long-form content. Fixing this with AI video scanning costs a fortune and still misses the point. This proposal adds one step to the upload form: creators declare what their video is about and confirm they have rights to any third-party content they used. Legitimate creators sign in ten seconds. Bad actors face a forced choice — lie and create legal liability, or tell the truth and get filtered. No new AI systems required. No algorithm overhaul. A form field and a legal declaration. Any creator who objects to signing it is, by definition, the problem.
 
 ---
 
 ## Abstract
 
-Short-form video platforms face a rapidly worsening content quality crisis driven by automated re-upload bots that repurpose existing clips with minimal modifications — swapped narration, altered titles, and superficial edits. Current mitigation strategies rely on pixel-level visual language models (VLMs) applied at scale, incurring enormous inference costs while remaining semantically blind to creator intent. We propose Reverse Context Anchoring (RCA): a hybrid content verification architecture that inverts the traditional bottom-up video analysis paradigm. Instead of reading the video first, RCA requires creators to submit a structured Intent Blueprint at upload time, providing the AI system with a semantic ground truth before any visual computation begins. This approach reduces conditional VLM invocation by an estimated 90%+, creates a self-enforcing legal deterrence layer against bad actors, and enables a fundamentally superior Intent-Matching Recommendation Engine that targets viewer cognition rather than behavioral surface patterns.
+Video platforms face a rapidly worsening content quality crisis driven by automated re-upload bots that repurpose existing clips with minimal modifications — swapped narration, altered titles, and superficial edits. This problem affects both short-form and long-form content equally. Current mitigation strategies rely on pixel-level visual language models (VLMs) applied at scale, incurring enormous inference costs while remaining semantically blind to creator intent. We propose Reverse Context Anchoring (RCA): a hybrid content verification architecture that inverts the traditional bottom-up video analysis paradigm. Instead of reading the video first, RCA requires creators to submit a structured Intent Blueprint at upload time, providing the AI system with a semantic ground truth before any visual computation begins. This approach reduces conditional VLM invocation by an estimated 90%+, creates a self-enforcing legal deterrence layer against bad actors, and enables a fundamentally superior Intent-Matching Recommendation Engine that targets viewer cognition rather than behavioral surface patterns.
 
 ---
 
@@ -22,7 +23,7 @@ Short-form video platforms face a rapidly worsening content quality crisis drive
 
 ### 1.1 The Re-Upload Bot Economy
 
-Modern short-form platforms (YouTube Shorts, TikTok, Instagram Reels) have become systematically exploited by automated pipelines that:
+Modern video platforms (YouTube, TikTok, Instagram) have become systematically exploited by automated pipelines that:
 
 1. Scrape high-performing clips from competitor platforms (X, Reddit, other Shorts channels)
 2. Apply minimal transformations: AI-generated narration overlay, title variation, minor cropping
